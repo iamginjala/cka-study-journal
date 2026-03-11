@@ -257,6 +257,9 @@ kubeadm token create --print-join-command
 Copy output → run on node02 → verify with `kubectl get nodes`
 
 ---
+Static pod name in kubectl always has node name appended — e.g. resource-reserver-v1-controlplane
+Changing the name in the manifest → kubelet automatically recreates the pod with new name
+scp is your best friend for moving files between nodes in CKA
 
 ## 13. Exam Tips
 
